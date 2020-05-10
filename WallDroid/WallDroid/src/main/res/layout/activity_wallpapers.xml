@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Activity.WallpapersActivity">
+
+    <EditText
+        android:id="@+id/wallpaper_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Wallpapers.."
+        android:layout_toStartOf="@id/btn_search"
+        android:padding="16dp"
+        android:background="@drawable/edittext_background"/>
+
+    <ImageButton
+        android:id="@+id/btn_search"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_search"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/send_message_background"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wallpaperRecyclerList"
+        android:layout_below="@id/wallpaper_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:padding="8dp"/>
+
+</RelativeLayout>
